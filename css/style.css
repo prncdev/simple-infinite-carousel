@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #002366;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #1a1818;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding-inline: 1.5rem;
+  padding-block: .8rem;
+  background: none;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+.primary {
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: 600;
+}
+.secondary {
+  padding: 0;
+}
+
+.flex-container {
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 100%;
+  height: 100%; */
+  /* justify-content: center; */
+  text-align: center;
+  /* align-content: center; */
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0.75rem;
+  padding-block: 0.75rem;
+  background: yellowgreen;
+  width: 1175px;
+}
+
+.carousel-tracker {
+  /* background: wheat; */
+  text-align: initial;
+  padding-inline: .5rem;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 1.25rem;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  transition: transform .3s ease-out;
+  /* transform: translateX(-385px); */
+}
+
+.card {
+  padding-inline: 4rem;
+  padding-block: 1.5rem;
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 1.3rem;
+  text-align: center;
+  flex: 1 0 365px;
+}
+.card-title, .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.card-content {
+  gap: .3rem;
+}
+
+.card-content a {
+  color: #6b6b6b;
+}
+
+.controller {
+  /* background: #000;
+  text-align: center;
+  z-index: 3; */
+}
+
+.controller > .btn {
+  position: absolute;
+  z-index: 3;
+  font-size: 22px;
+  background-color: aliceblue;
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.59);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.59);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.59);
+}
+
+.controller .prev,
+.controller .next {
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
+.controller .prev {
+  left: 0px;
+}
+.controller .next {
+  right: 0px;
+}
