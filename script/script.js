@@ -33,13 +33,6 @@ const cards = carouselTrack.children;
 const firstCard = carouselTrack.firstElementChild;
 const lastCard = carouselTrack.lastElementChild;
 const cardWidth = carouselTrack.firstElementChild.clientWidth + 20;
-console.log(cardWidth);
-
-// console.log(cards[4] === lastCard);
-
-
-// console.log(carouselTrack, prevBtn, nextBtn);
-/* transform: translateX(-385px); calculation */
 let index = 0;
 const prevSlide = function (DOMEvent) {
 	if (index < 1)
